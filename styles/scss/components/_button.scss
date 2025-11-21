@@ -1,0 +1,41 @@
+.btn{
+    padding: 16px 24px;
+    border-radius: $radius;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    display: inline-block;
+    text-align: center;
+        &.small{
+            padding: 12px 16px;
+            font-size: 14px;
+        }
+        &.large{
+            padding: 16px 24px;
+            font-size: 16px;
+        }
+
+        &.medium{
+            padding: 14px 20px;
+            font-size: 16px;
+        }
+    &--primary{
+        @extend .btn;
+        background-color: $primary;
+        color: $white;
+        &:hover{
+            background-color: $primary-hover;
+        }
+    }
+    &--secondary{
+        @extend .btn;
+        background-color: $secondary;
+        color: $white;
+        &:hover{
+            background-color: $secondary-hover;
+        }
+    }
+
+}
